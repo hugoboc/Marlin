@@ -109,7 +109,7 @@
  * Select a secondary serial port on the board to use for communication with the host.
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-//#define SERIAL_PORT_2 -1
+#define SERIAL_PORT_2 0
 
 /**
  * This setting determines the communication speed of the printer.
@@ -2335,7 +2335,7 @@
  *  as the Arduino cannot handle the current the LEDs will require.
  *  Failure to follow this precaution can destroy your Arduino!
  *  NOTE: A separate 5V power supply is required! The NeoPixel LED needs
- *  more current than the Arduino 5V linear regulator can produce.
+ *  more current than the Arduino 5V regulator can produce.
  * *** CAUTION ***
  *
  * LED Type. Enable only one of the following two options.
