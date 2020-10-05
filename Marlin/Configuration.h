@@ -1102,7 +1102,7 @@
 
 //#define UNKNOWN_Z_NO_RAISE      // Don't raise Z (lower the bed) if Z is "unknown." For beds that fall when Z is powered off.
 
-//#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
+#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
 //#define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
@@ -1125,7 +1125,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 198
+#define Z_MAX_POS 200
 
 /**
  * Software Endstops
@@ -1141,7 +1141,7 @@
 #if ENABLED(MIN_SOFTWARE_ENDSTOPS)
   #define MIN_SOFTWARE_ENDSTOP_X
   #define MIN_SOFTWARE_ENDSTOP_Y
-  #define MIN_SOFTWARE_ENDSTOP_Z
+  //#define MIN_SOFTWARE_ENDSTOP_Z
 #endif
 
 // Max software endstops constrain movement within maximum coordinate bounds
@@ -1387,7 +1387,7 @@
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_XY (100*60)
+#define HOMING_FEEDRATE_XY (60*60)
 #define HOMING_FEEDRATE_Z  (40*60)
 
 // Validate that endstops are triggered on homing moves
